@@ -1,0 +1,171 @@
+/* Reset básico */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #0077b5; /* color LinkedIn */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a.github {
+  color: #333;
+}
+
+a:hover {
+  color: #005582;
+}
+
+header {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Nombre y presentación */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+
+
+#hero h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #475569;
+  max-width: 600px;
+}
+
+/* Experiencia laboral */
+#experience h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  border-bottom: 3px solid #0077b5;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.job {
+  margin-bottom: 1.8rem;
+}
+
+.job h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.job span {
+  font-style: italic;
+  color: #64748b;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.job ul {
+  list-style: disc inside;
+  color: #475569;
+}
+
+/* Redes sociales */
+#socials {
+  text-align: center;
+}
+
+#socials h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  border-bottom: 3px solid #0077b5;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+}
+
+.social-link svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+  fill: currentColor;
+}
+
+
+/* Responsive */
+@media (min-width: 600px) {
+  #hero {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  #hero img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
